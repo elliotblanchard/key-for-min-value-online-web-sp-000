@@ -3,12 +3,16 @@
 
 def key_for_min_value(name_hash)
   min_value = 0
-  birthday_kids.collect do |kids_name, age|
-    if min_value != 0 && age < min_value
-      min_value = age
+  min_key = ""
+  name_hash.collect do |key, value|
+    if min_value != 0 && value < min_value
+      min_value = value
+      min_key = key
     elsif min_value == 0
-      min_value = age
+      min_value = value
+      min_key = key
     end
   end
   min_value
+  min_key
 end
