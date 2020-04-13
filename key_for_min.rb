@@ -8,7 +8,7 @@ def key_for_min_value(name_hash)
       min_value = age
     elsif min_value == 0
       min_value = age
-    end  
+    end
   end
   min_value
 end
